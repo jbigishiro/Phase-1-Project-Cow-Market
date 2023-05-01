@@ -16,22 +16,65 @@ body {
 .column {
     float: left;
     padding: 10px;
+
+   
   }
   
 
 .userPage {
-    width: 20%;
+    width: 25%;
  
     border: 1px solid rgb(180, 178, 178)
 }
 
 .cowListing {
-    width: 60%;
+    width: 50%;
     border: 1px solid rgb(180, 178, 178)
 }
 
 .requestPage {
-    width: 20%;
+    width: 25%;
     border: 1px solid rgb(180, 178, 178)
 }
 
+#sellerForm {
+    border: 1px solid rgb(180, 178, 178);
+    background: rgb(197, 237, 244);
+    top: 20px;
+    overflow: hidden;
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    word-break: break-all;
+}
+#buyerForm {
+    border: 1px solid rgb(180, 178, 178);
+    background: rgb(156, 178, 178);
+    top: 20px;
+    overflow: hidden;
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    word-break: break-all;
+}
+
+#form  {
+    
+    top: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+    font-size: 12px;
+    text-align: left;
+  }
+
+.btn {
+    color:white;
+    background: green;
+    border: none;
+    font-size: 12px;
+    width: 90px;
+    height: 25px;
+    border-radius: 5px;
+    align-self: center;
+  }
