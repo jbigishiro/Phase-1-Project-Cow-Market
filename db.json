@@ -1,44 +1,44 @@
 {
-    "animalData" : [
+    "sellerData" : [
        { 
-         "name": " John Peter",
-         "phoneNumber": "111223344",
+         "name": " John Claude",
+         "phoneNumber": "113223344",
          "address": " 11 bestraod Fort Worth Tx",
-         "imageUrl":"https://files.worldwildlife.org/wwfcmsprod/images/HERO_Red_Panda_279141/hero_full/7bkg4jrmln_XL_279141.jpg",
+         "imageUrl":"https://cdn.britannica.com/23/523-050-0C120420/cow-Holstein-Friesian.jpg",
          "price":" $1517 ",
-         "weight":"300Lb"
+         "weight":"700Lb"
        },
        { 
-        "name": " John Peter",
-        "phoneNumber": "111223344",
-        "address": " 11 bestraod Fort Worth Tx",
-        "imageUrl":"https://files.worldwildlife.org/wwfcmsprod/images/HERO_Red_Panda_279141/hero_full/7bkg4jrmln_XL_279141.jpg",
-        "price":" $1517 ",
-        "weight":"300Lb"
+        "name": " John Baptist",
+        "phoneNumber": "114223344",
+        "address": " 12 bestraod Fort Worth Tx",
+        "imageUrl":"https://cdn.britannica.com/55/174255-050-526314B6/brown-Guernsey-cow.jpg",
+        "price":" $3517 ",
+        "weight":"1360Lb"
       },
       { 
         "name": " John Peter",
-        "phoneNumber": "111223344",
-        "address": " 11 bestraod Fort Worth Tx",
-        "imageUrl":"https://files.worldwildlife.org/wwfcmsprod/images/HERO_Red_Panda_279141/hero_full/7bkg4jrmln_XL_279141.jpg",
-        "price":" $1517 ",
-        "weight":"300Lb"
+        "phoneNumber": "115223344",
+        "address": " 13 bestraod Fort Worth Tx",
+        "imageUrl":"https://cdn.britannica.com/43/109043-050-BA54F448/Hereford-cow-calf.jpg",
+        "price":" call for price ",
+        "weight":"950 lb"
       },
       { 
-        "name": " John Peter",
-        "phoneNumber": "111223344",
-        "address": " 11 bestraod Fort Worth Tx",
-        "imageUrl":"https://files.worldwildlife.org/wwfcmsprod/images/HERO_Red_Panda_279141/hero_full/7bkg4jrmln_XL_279141.jpg",
-        "price":" $1517 ",
-        "weight":"300Lb"
+        "name": " John Bosco",
+        "phoneNumber": "116223344",
+        "address": " 14 bestraod Fort Worth Tx",
+        "imageUrl":"https://cdn.britannica.com/25/525-050-2C177308/Ayrshire-cow.jpg",
+        "price":" $2317 ",
+        "weight":"1030 lb"
       },
       { 
-        "name": " John Peter",
-        "phoneNumber": "111223344",
-        "address": " 11 bestraod Fort Worth Tx",
-        "imageUrl":"https://files.worldwildlife.org/wwfcmsprod/images/HERO_Red_Panda_279141/hero_full/7bkg4jrmln_XL_279141.jpg",
-        "price":" $1517 ",
-        "weight":"300Lb"
+        "name": " John Paul",
+        "phoneNumber": "117223344",
+        "address": " 19 bestraod Fort Worth Tx",
+        "imageUrl":"https://cdn.britannica.com/21/521-050-0C8E21D8/cow-Brown-Swiss.jpg",
+        "price":" $2517 ",
+        "weight":"1040 lb"
       }
       
     ]
