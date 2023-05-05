@@ -15,24 +15,23 @@ body {
 
 .column {
     float: left;
-    padding: 10px;
-
-   
+    padding: 10px; 
   }
   
-
 .userPage {
+    height: 100%;
     width: 25%;
- 
     border: 1px solid rgb(180, 178, 178)
 }
 
 .cowListing {
+    height: 100%;
     width: 50%;
     border: 1px solid rgb(180, 178, 178)
 }
 
 .requestPage {
+    height: 100%;
     width: 25%;
     border: 1px solid rgb(180, 178, 178)
 }
@@ -56,8 +55,16 @@ body {
     text-align: left;
 }
 
-#form  {
-    
+#form1  {
+    top: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  #form2  {
     top: 10px;
     margin-left: 10px;
     overflow: hidden;
@@ -75,4 +82,21 @@ body {
     height: 25px;
     border-radius: 5px;
     align-self: center;
+  }
+
+  #card{
+    width: 100%;
+    top: 20px;
+}
+#cow {
+    float: left;
+    width: 70%;
+  }
+  
+#sellerInfo {
+    float: left;
+    width: 30%;
+  }
+  .content {
+    color:blue
   }

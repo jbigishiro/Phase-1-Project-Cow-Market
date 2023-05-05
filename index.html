@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cow Market</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script  defer src="main.js"></script>
@@ -19,20 +20,20 @@
         <div id="sellerForm">
             <h3>Seller Form</h3>
             <p> Are you the Seller? Fill out this from</p>
-            <form id="form">
+            <form id="form1">
                 <label for="name">Name</label><br>
-                <input type="text" id="sellerName" required> <br><br>
-                <label for="name">Phone Number</label><br>
-                <input type="tel" id="sellerTel" required> <br><br>
-                <label for="name">Address</label><br>
-                <input type="address" id="sellerAddress" required> <br><br>
-                <label for="text">Image Url</label><br>
-                <input type="text" id="sellerImage" required> <br><br>
-                <label for="name">Price</label><br>
-                <input type="text" id="price" required> <br><br>
-                <label for="name">Weight</label><br>
-                <input type="text" id="weight" required> <br><br>
-                <button class="btn" id="btn2" type="button">Submit</button><br>
+                <input type="text" name="name" id="name" required> <br><br>
+                <label for="phoneNumber">Phone Number</label><br>
+                <input type="tel" name="phoneNumber" id="phoneNumber" required> <br><br>
+                <label for="address">Address</label><br>
+                <input type="text" name="address" id="address" required> <br><br>
+                <label for="imageUrl">Image Url</label><br>
+                <input type="text" name="imageUrl" id="imageUrl" required> <br><br>
+                <label for="price">Price</label><br>
+                <input type="text" name="price" id="price" required> <br><br>
+                <label for="weight">Weight</label><br>
+                <input type="text" name="weight" id="weight" required> <br><br>
+                <button type="submit" class="btn" id="btn1" >Submit</button><br>
              </form>
              <p></p> <br>
         </div>
@@ -40,26 +41,26 @@
         <div id="buyerForm">
             <h3>Buyer Form</h3>
             <p> Are you the buyer? Check the listings or you can make a request by filling out the form below and you will be contacted by Sellers</p>
-            <form id="form">
+            <form id="form2">
                <label for="name">Name</label><br>
-                <input type="text" id="buyerName" required> <br><br>
+                <input type="text" id="name" required> <br><br>
                 <label for="name">Phone Number</label><br>
-                <input type="tel" id="buyerTel" required> <br><br>
-                <label for="name">Address</label><br>
-                <input type="address" id="buyerAddress" required> <br><br>
-                <label for="text">Describe the cow(s) you want</label><br>
-                <textarea id="textarea" name="textarea" rows="4" ></textarea><br><br>
-                <button class="btn" id="btn2" type="button">Submit</button><br>
+                <input type="tel" name="name" id="name" required> <br><br>
+                <label for="address">Address</label><br>
+                <input type="address" name="address" id="address" required> <br><br>
+                <label for="description">Describe the cow(s) you want</label><br>
+                <textarea id="description" name="description"  rows="4" ></textarea><br><br>
+                <button type="submit" class="btn" id="btn2">Submit</button><br>
              </form>
              <p></p>
         </div>
         
     </div>
     <div class="column cowListing">
-        <h2 id="listing">Cow Listing</h2>
-        <ul id="sellerListing">
+        <h2 id="listing">Cow Listings</h2>
+        <div id="sellerListing">
             
-        </ul>
+        </div>
              
     </div>
     <div class="column requestPage">
