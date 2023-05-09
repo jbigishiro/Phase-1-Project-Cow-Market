@@ -23,7 +23,7 @@ function sellerPage(seller) {
   cow.id = "cow";
   let sellerInfo = document.createElement("div");
   sellerInfo.id = "sellerInfo";
-  cow.innerHTML = `<img src=${seller.imageUrl} width="400" height="300">`;
+  cow.innerHTML = `<img src=${seller.imageUrl} width="100%" height="auto">`;
   sellerInfo.innerHTML = `
      <div class="content">
       <p> Seller Name: ${seller.name}</p>

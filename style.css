@@ -20,13 +20,13 @@ body {
   
 .userPage {
     height: 100%;
-    width: 25%;
+    width: 30%;
     border: 1px solid rgb(180, 178, 178)
 }
 
 .cowListing {
     height: 100%;
-    width: 50%;
+    width: 70%;
     border: 1px solid rgb(180, 178, 178)
 }
 
@@ -39,15 +39,6 @@ body {
 #sellerForm {
     border: 1px solid rgb(180, 178, 178);
     background: rgb(197, 237, 244);
-    top: 20px;
-    overflow: hidden;
-    position: relative;
-    font-size: 14px;
-    text-align: left;
-}
-#buyerForm {
-    border: 1px solid rgb(180, 178, 178);
-    background: rgb(156, 178, 178);
     top: 20px;
     overflow: hidden;
     position: relative;
