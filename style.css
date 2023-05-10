@@ -81,13 +81,16 @@ body {
 }
 #cow {
     float: left;
-    width: 70%;
+    width: 65%;
   }
   
 #sellerInfo {
     float: left;
-    width: 30%;
+    width: 35%;
   }
   .content {
-    color:blue
+    color:blue;
+    border: 1px solid rgb(180, 178, 178);
+    padding: 25px;
+    background: rgb(188, 188, 244);
   }
