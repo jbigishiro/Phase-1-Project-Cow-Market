@@ -1,16 +1,24 @@
 //eventlistener to switch between login form and signup form
 document.getElementById("clickToSignup").addEventListener("click", () => {
-  const loginForm = document.getElementById("loginForm");
-  const signupForm = document.getElementById("signupForm");
+  const loginForm = document.getElementById("divloginForm");
+  const signupForm = document.getElementById("divsignupForm");
   loginForm.classList.add("hideSigninSignupForm");
   signupForm.classList.remove("hideSigninSignupForm");
 });
 
 document.getElementById("clickToSignin").addEventListener("click", () => {
-  const loginForm = document.getElementById("loginForm");
-  const signupForm = document.getElementById("signupForm");
+  const loginForm = document.getElementById("divloginForm");
+  const signupForm = document.getElementById("divsignupForm");
   loginForm.classList.remove("hideSigninSignupForm");
   signupForm.classList.add("hideSigninSignupForm");
+});
+
+// eventListener to go back to login form
+document.getElementById("backToLoginPage").addEventListener("click", () => {
+  const loginForm = document.getElementById("divloginForm");
+  const sellerForm = document.getElementById("divsellerForm1");
+  loginForm.classList.remove("hideSigninSellerForm");
+  sellerForm.classList.add("hideSigninSellerForm");
 });
 
 // login functionality
@@ -28,9 +36,9 @@ function login(e) {
       username === sellerAccounts[i].username &&
       password === sellerAccounts[i].password
     ) {
-      alert(username + " is logged in!!!");
-      const loginForm = document.getElementById("loginForm");
-      const sellerForm = document.getElementById("sellerForm1");
+      alert("you have successfully logged in!");
+      const loginForm = document.getElementById("divloginForm");
+      const sellerForm = document.getElementById("divsellerForm1");
       loginForm.classList.add("hideSigninSellerForm");
       sellerForm.classList.remove("hideSigninSellerForm");
       return;
@@ -74,11 +82,6 @@ function signup(e) {
           }).then((resp) => resp.json());
 
           alert("you have successfully signed up ");
-
-          const loginForm = document.getElementById("loginForm");
-          const sellerForm = document.getElementById("sellerForm1");
-          loginForm.classList.remove("hideSigninSellerForm");
-          sellerForm.classList.add("hideSigninSellerForm");
         }
         return;
       }

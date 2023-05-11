@@ -20,57 +20,60 @@
             <h2>User Page</h2>
         </div>
         <div id="sellerForm">
-           
-            <h3> Are you the Seller? <button type="click" id="clickToSignin">Log in </button></h3>
-            <h3> Don't you have an account? <button type="click" id="clickToSignup">click here to signup</button> </h3>
-
 
             <!--login from-->
-            <form id="loginForm" >
-                <h2>Login</h2>
-                <input type="text" name="username" id="username" placeholder="Username" required> <br><br>
-                <input type="password" name="password" id="password" placeholder="Password" required> <br><br>
-                <button type="submit" class="btn" id="btn1">Login</button><br>
-            </form>
+            <div id="divloginForm">
+                <form id="loginForm">
+                    <h2>Login</h2>
+                    <input type="text" name="username" id="username" placeholder="Username" required> <br><br>
+                    <input type="password" name="password" id="password" placeholder="Password" required> <br><br>
+                    <button type="submit" class="btn" id="btn1">Login</button><br><br>
+                </form>
+                <h3> Don't you have an account? <button type="click" id="clickToSignup">Click here to Signup</button>
+                </h3>
+            </div>
 
             <!--Seller listing-->
-            <form id="sellerForm1" class="hideSigninSellerForm">
-                <h3>Seller Form</h3>
-                <label for="name">Name</label><br>
-                <input type="text" name="name" id="name" required> <br><br>
-                <label for="phoneNumber">Phone Number</label><br>
-                <input type="tel" name="phoneNumber" id="phoneNumber" required> <br><br>
-                <label for="address">Address</label><br>
-                <input type="text" name="address" id="address" required> <br><br>
-                <label for="imageUrl">Image Url</label><br>
-                <input type="text" name="imageUrl" id="imageUrl" required> <br><br>
-                <label for="price">Price</label><br>
-                <input type="text" name="price" id="price" required> <br><br>
-                <label for="weight">Weight</label><br>
-                <input type="text" name="weight" id="weight" required> <br><br>
-                <button type="submit" class="btn" id="btn1">Submit</button><br>
-                <button type="click" id="backToLoginPage">Login Page </button>
-            </form>
+            <div id="divsellerForm1" class="hideSigninSellerForm">
+                <form id="sellerForm1">
+                    <h3>Seller Form</h3>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" required> <br><br>
+                    <label for="phoneNumber">Phone Number</label><br>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" required> <br><br>
+                    <label for="address">Address</label><br>
+                    <input type="text" name="address" id="address" required> <br><br>
+                    <label for="imageUrl">Image Url</label><br>
+                    <input type="text" name="imageUrl" id="imageUrl" required> <br><br>
+                    <label for="price">Price</label><br>
+                    <input type="text" name="price" id="price" required> <br><br>
+                    <label for="weight">Weight</label><br>
+                    <input type="text" name="weight" id="weight" required> <br><br>
+                    <button type="submit" class="btn" id="btn1">Submit</button><br><br>
+                </form>
+                <button type="click" id="backToLoginPage"> Back to Login Page </button>
+            </div>
 
             <!-- signup form -->
-            <form id="signupForm" class="hideSigninSignupForm">
-                <h2>Sign Up</h2>
-                <input type="text" name="name" id="name" placeholder="Name" required><br>
-                <input type="email" name="email" id="email" placeholder="Email" required><br>
-                <input type="text" name="username" id="userName" placeholder="Username" required><br>
-                <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
-                <input type="password" name="reenterpassword" id="reenterPassword" placeholder="Re-enter Password" required><br>
-                <button type="submit" class="btn" id="btn2">Sign Up</button>
-            </form>
-            <p></p> <br>
+            <div id="divsignupForm" class="hideSigninSignupForm">
+                <form id="signupForm">
+                    <h2>Sign Up</h2>
+                    <input type="text" name="name" id="name" placeholder="Name" required><br>
+                    <input type="email" name="email" id="email" placeholder="Email" required><br>
+                    <input type="text" name="username" id="userName" placeholder="Username" required><br>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
+                    <input type="password" name="reenterpassword" id="reenterPassword" placeholder="Re-enter Password"
+                        required><br>
+                    <button type="submit" class="btn" id="btn2">Sign Up</button><br><br>
+                </form>
+                <button type="click" id="clickToSignin">Back to Login Page </button>
+            </div>
         </div>
-        <h></h> <br><br>
 
     </div>
     <div class="column cowListing">
         <h2 id="listing">Cow Listings</h2>
         <div id="sellerListing">
-
         </div>
 
     </div>
