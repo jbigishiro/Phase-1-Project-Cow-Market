@@ -21,6 +21,8 @@ body {
   height: 100%;
   width: 30%;
   border: 1px solid rgb(180, 178, 178);
+  bottom: 20px;
+  padding: auto;
 }
 
 .cowListing {
@@ -29,16 +31,9 @@ body {
   border: 1px solid rgb(180, 178, 178);
 }
 
-.requestPage {
-  height: 100%;
-  width: 25%;
-  border: 1px solid rgb(180, 178, 178);
-}
-
 #sellerForm {
   border: 1px solid rgb(180, 178, 178);
   background: rgb(197, 237, 244);
-  top: 20px;
   overflow: hidden;
   position: relative;
   font-size: 14px;
@@ -109,4 +104,9 @@ body {
 
 .hideSigninSellerForm {
   display: none;
+}
+
+#listing {
+  text-align: center;
+font-size: 2rem
 }
