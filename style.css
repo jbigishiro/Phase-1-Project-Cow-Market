@@ -110,3 +110,19 @@ body {
   text-align: center;
 font-size: 2rem
 }
+
+#backToLoginPage {
+  top: 30px;
+  bottom: 30px;
+  padding: 3px;
+  text-align: center;
+  align-items: center;
+}
+
+#clickToSignin {
+  top: 30px;
+  padding: 3px;
+  bottom: 30px;
+  text-align: center;
+  align-items: center;
+}

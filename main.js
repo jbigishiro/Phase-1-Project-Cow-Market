@@ -27,25 +27,27 @@ function login(e) {
   e.preventDefault();
   let username = e.target.username.value;
   let password = e.target.password.value;
+  document.getElementById("loginForm").reset();
 
- fetch("http://localhost:3000/sellerAccount")
+  fetch("http://localhost:3000/sellerAccount")
     .then((res) => res.json())
     .then((sellerAccounts) => {
       for (let i = 0; i < sellerAccounts.length; i++) {
-    if (
-      username === sellerAccounts[i].username &&
-      password === sellerAccounts[i].password
-    ) {
-      alert("you have successfully logged in!");
-      const loginForm = document.getElementById("divloginForm");
-      const sellerForm = document.getElementById("divsellerForm1");
-      loginForm.classList.add("hideSigninSellerForm");
-      sellerForm.classList.remove("hideSigninSellerForm");
-      return;
-    }
-  }
-  alert("incorrect username or password");
-})}
+        if (
+          username === sellerAccounts[i].username &&
+          password === sellerAccounts[i].password
+        ) {
+          alert("you have successfully logged in!");
+          const loginForm = document.getElementById("divloginForm");
+          const sellerForm = document.getElementById("divsellerForm1");
+          loginForm.classList.add("hideSigninSellerForm");
+          sellerForm.classList.remove("hideSigninSellerForm");
+          return;
+        }
+      }
+      alert("incorrect username or password");
+    });
+}
 
 // register functionality
 document.getElementById("signupForm").addEventListener("submit", signup);
@@ -56,6 +58,7 @@ function signup(e) {
   let username = e.target.username.value;
   let password = e.target.password.value;
   let reenterPassword = e.target.reenterpassword.value;
+  document.getElementById("signupForm").reset();
   let newUser = {
     name: name,
     email: email,
@@ -89,7 +92,9 @@ function signup(e) {
 }
 
 //create an eventListenerr to submit the seller form
-document.getElementById("sellerForm1").addEventListener("submit", submitSellerForm);
+document
+  .getElementById("sellerForm1")
+  .addEventListener("submit", submitSellerForm);
 // function to submit a form
 function submitSellerForm(e) {
   e.preventDefault();
@@ -101,6 +106,7 @@ function submitSellerForm(e) {
     price: e.target.price.value,
     weight: e.target.weight.value,
   };
+  document.getElementById("sellerForm1").reset();
   sellerPage(cowObj);
   addCow(cowObj);
 }
@@ -149,7 +155,6 @@ function addCow(cowObj) {
     body: JSON.stringify(cowObj),
   }).then((resp) => resp.json());
   alert("you have successfully sent your form ");
-
 }
 
 function initialize() {
