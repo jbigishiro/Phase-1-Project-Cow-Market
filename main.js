@@ -106,7 +106,6 @@ function submitSellerForm(e) {
     price: e.target.price.value,
     weight: e.target.weight.value,
   };
-  document.getElementById("sellerForm1").reset();
   sellerPage(cowObj);
   addCow(cowObj);
 }
