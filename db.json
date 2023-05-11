@@ -1,4 +1,38 @@
 {
+  "sellerAccount": [
+    {
+      "id": 1,
+      "name": "Samuel",
+      "email": "samuel@gmail.com",
+      "username": "sam",
+      "password": "password1"
+    },
+    {
+      "name": "Mattew",
+      "email": "mattew@gmail.com",
+      "username": "matt",
+      "password": "password2"
+    },
+    {
+      "name": "justin Big",
+      "email": "justin@gmail.com",
+      "username": "justin",
+      "password": "password3"
+    },
+    {
+      "name": "Jaden",
+      "email": "jaden@gmail.com",
+      "username": "jaden",
+      "password": "password4"
+    },
+    {
+      "name": "Janet",
+      "email": "janet@gmail.com",
+      "username": "janet",
+      "password": "password5"
+    }
+  ],
+
   "sellerData": [
     {
       "id": 1,
