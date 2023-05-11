@@ -12,6 +12,7 @@ document.getElementById("clickToSignin").addEventListener("click", () => {
   loginForm.classList.remove("hideSigninSignupForm");
   signupForm.classList.add("hideSigninSignupForm");
 });
+
 // login functionality
 document.getElementById("loginForm").addEventListener("submit", login);
 function login(e) {
@@ -19,10 +20,13 @@ function login(e) {
   let username = e.target.username.value;
   let password = e.target.password.value;
 
-  for (i = 0; i < objPeople.length; i++) {
+ fetch("http://localhost:3000/sellerAccount")
+    .then((res) => res.json())
+    .then((sellerAccounts) => {
+      for (let i = 0; i < sellerAccounts.length; i++) {
     if (
-      username === objPeople[i].username &&
-      password === objPeople[i].password
+      username === sellerAccounts[i].username &&
+      password === sellerAccounts[i].password
     ) {
       alert(username + " is logged in!!!");
       const loginForm = document.getElementById("loginForm");
@@ -33,7 +37,7 @@ function login(e) {
     }
   }
   alert("incorrect username or password");
-}
+})}
 
 // register functionality
 document.getElementById("signupForm").addEventListener("submit", signup);
@@ -129,7 +133,7 @@ function sellerPage(seller) {
   //add  card to DOM
   document.getElementById("sellerListing").appendChild(card);
 }
-// fetch requests
+
 //Get Fetch for the db.json file resources
 function getSellerData() {
   fetch("http://localhost:3000/sellerData")
@@ -145,6 +149,8 @@ function addCow(cowObj) {
     },
     body: JSON.stringify(cowObj),
   }).then((resp) => resp.json());
+  alert("you have successfully sent your form ");
+
 }
 
 function initialize() {

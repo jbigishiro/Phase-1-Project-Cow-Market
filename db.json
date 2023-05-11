@@ -8,31 +8,34 @@
       "password": "password1"
     },
     {
+      "id": 2,
       "name": "Mattew",
       "email": "mattew@gmail.com",
       "username": "matt",
       "password": "password2"
     },
     {
+      "id": 3,
       "name": "justin Big",
       "email": "justin@gmail.com",
       "username": "justin",
       "password": "password3"
     },
     {
+      "id": 4,
       "name": "Jaden",
       "email": "jaden@gmail.com",
       "username": "jaden",
       "password": "password4"
     },
     {
+      "id": 5,
       "name": "Janet",
       "email": "janet@gmail.com",
       "username": "janet",
       "password": "password5"
     }
   ],
-
   "sellerData": [
     {
       "id": 1,
