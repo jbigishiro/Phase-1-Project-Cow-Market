@@ -89,9 +89,7 @@ function signup(e) {
 }
 
 //create an eventListenerr to submit the seller form
-document
-  .getElementById("sellerForm1")
-  .addEventListener("submit", submitSellerForm);
+document.getElementById("sellerForm1").addEventListener("submit", submitSellerForm);
 // function to submit a form
 function submitSellerForm(e) {
   e.preventDefault();
@@ -120,8 +118,6 @@ function sellerPage(seller) {
   image.style.width = "100%";
   image.style.height = "auto";
   cow.append(image);
-
-  // to fix like above
   sellerInfo.innerHTML = `
      <div class="content">
       <p> Seller Name: ${seller.name}</p>
