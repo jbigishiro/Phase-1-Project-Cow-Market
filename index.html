@@ -20,9 +20,22 @@
             <h2>User Page</h2>
         </div>
         <div id="sellerForm">
-            <h3>Seller Form</h3>
-            <p> Are you the Seller? Fill out this from</p>
-            <form id="form1">
+           
+            <h3> Are you the Seller? <button type="click" id="clickToSignin">Log in </button></h3>
+            <h3> Don't you have an account? <button type="click" id="clickToSignup">click here to signup</button> </h3>
+
+
+            <!--login from-->
+            <form id="loginForm" >
+                <h2>Login</h2>
+                <input type="text" name="username" id="username" placeholder="Username" required> <br><br>
+                <input type="password" name="password" id="password" placeholder="Password" required> <br><br>
+                <button type="submit" class="btn" id="btn1">Login</button><br>
+            </form>
+
+            <!--Seller listing-->
+            <form id="sellerForm1" class="hideSigninSellerForm">
+                <h3>Seller Form</h3>
                 <label for="name">Name</label><br>
                 <input type="text" name="name" id="name" required> <br><br>
                 <label for="phoneNumber">Phone Number</label><br>
@@ -37,6 +50,17 @@
                 <input type="text" name="weight" id="weight" required> <br><br>
                 <button type="submit" class="btn" id="btn1">Submit</button><br>
             </form>
+
+            <!-- signup form -->
+            <form id="signupForm" class="hideSigninSignupForm">
+                <h2>Sign Up</h2>
+                <input type="text" name="name" id="name" placeholder="Name" required><br>
+                <input type="email" name="email" id="email" placeholder="Email" required><br>
+                <input type="text" name="username" id="userName" placeholder="Username" required><br>
+                <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
+                <input type="password" name="reenterpassword" id="reenterPassword" placeholder="Re-enter Password" required><br>
+                <button type="submit" class="btn" id="btn2">Sign Up</button>
+            </form>
             <p></p> <br>
         </div>
         <h></h> <br><br>
@@ -44,12 +68,16 @@
     </div>
     <div class="column cowListing">
         <h2 id="listing">Cow Listings</h2>
-        <div id="sellerListing"></div>
+        <div id="sellerListing">
+
+        </div>
+
     </div>
 
     <footer>
         <p><em>Created by Justin Bigishiro for Flatiron School</em></p>
     </footer>
+
 
 </body>
 
