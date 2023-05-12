@@ -34,6 +34,13 @@
       "email": "janet@gmail.com",
       "username": "janet",
       "password": "password5"
+    },
+    {
+      "name": "jsutin",
+      "email": "jus12334@gmail.com",
+      "username": "gaby",
+      "password": "12345",
+      "id": 6
     }
   ],
   "sellerData": [
