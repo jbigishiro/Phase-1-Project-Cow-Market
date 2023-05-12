@@ -95,6 +95,7 @@ function signup(e) {
 document
   .getElementById("sellerForm1")
   .addEventListener("submit", submitSellerForm);
+
 // function to submit a form
 function submitSellerForm(e) {
   e.preventDefault();
